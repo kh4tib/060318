@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box; }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main {
+  width: 100%;
+  height: 100%;
+  background: #161616; }
+  .main__content {
+    width: 375px;
+    height: 680px;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 16px 8px rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-template-rows: 6rem 1fr;
+    grid-template-columns: 1fr; }
+  .main .content__header {
+    grid-area: 1 / 1 / 2 / 2; }
+  .main .content__details {
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 1fr; }
+    .main .content__details .details__one, .main .content__details .details__two {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 6rem 1fr; }
+      .main .content__details .details__one .__right, .main .content__details .details__two .__right {
+        grid-area: 1 / 1 /  2 / 2; }
+      .main .content__details .details__one .__left, .main .content__details .details__two .__left {
+        grid-area: 1 / 2 / 2 / 3; }
+
+.content__header {
+  display: flex;
+  align-items: center; }
+  .content__header .header__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; }
+
+.details__one .__right {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .details__one .__right .right__content {
+    transform: rotate(-90deg); }
+.details__one .__left {
+  background: url(https://images.unsplash.com/photo-1506634064465-7dab4de896ed?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7232062a1dd25e81e64cb63782b0172d&auto=format&fit=crop&w=2134&q=80) center center/cover no-repeat; }
+.details__two .__right {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .details__two .__right .right__content {
+    transform: rotate(-90deg);
+    color: #fff; }
+.details__two .__left {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .details__two .__left .left__content {
+    margin: 2rem; }
+    .details__two .__left .left__content .content__header {
+      margin-bottom: 2rem; }
+
+/*# sourceMappingURL=style.css.map */
