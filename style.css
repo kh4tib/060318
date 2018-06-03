@@ -6,7 +6,8 @@ html,
 body {
   height: 100%;
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Teko', sans-serif; }
 
 .main {
   display: flex;
@@ -16,16 +17,17 @@ body {
 .main {
   width: 100%;
   height: 100%;
-  background: #161616; }
+  background: #777; }
   .main__content {
     width: 375px;
     height: 680px;
     background: #fff;
     border-radius: 1rem;
-    box-shadow: 0px 4px 16px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 4px 24px 8px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-rows: 6rem 1fr;
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    overflow: hidden; }
   .main .content__header {
     grid-area: 1 / 1 / 2 / 2; }
   .main .content__details {
@@ -51,6 +53,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem; }
+    .content__header .header__content .content__logo {
+      width: 2rem;
+      height: 2rem; }
+    .content__header .header__content .content__icon {
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: .1rem; }
 
 .details__one .__right {
   background: #fff;
@@ -58,7 +67,11 @@ body {
   align-items: center;
   justify-content: center; }
   .details__one .__right .right__content {
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 0.825rem;
+    letter-spacing: .1rem; }
 .details__one .__left {
   background: url(https://images.unsplash.com/photo-1506634064465-7dab4de896ed?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7232062a1dd25e81e64cb63782b0172d&auto=format&fit=crop&w=2134&q=80) center center/cover no-repeat; }
 .details__two .__right {
@@ -75,7 +88,11 @@ body {
   align-items: center; }
   .details__two .__left .left__content {
     margin: 2rem; }
-    .details__two .__left .left__content .content__header {
-      margin-bottom: 2rem; }
+    .details__two .__left .left__content .content__title {
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-size: 1rem;
+      line-height: 0.825rem;
+      letter-spacing: .1rem; }
 
 /*# sourceMappingURL=style.css.map */
